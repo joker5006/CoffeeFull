@@ -1017,6 +1017,9 @@ path:hover {
     margin-right: 0;
   }
   .summary__btn {
-    margin-right: 150px;
+    margin: auto;
+  }
+  .summary__text {
+    font-size: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

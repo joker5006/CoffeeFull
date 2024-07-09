@@ -58,8 +58,11 @@
     margin-right: 0;
 
     &__btn {
-
-      margin-right: 150px;
+     
+      margin: auto;
+    }
+    &__text{
+      font-size: 100%;
     }
   }
 }
