@@ -1,0 +1,92 @@
+.intro {
+  margin-top: 50px;
+  background-image: url(../img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 105px;
+
+  &__title {
+    /* Great coffee made si */
+
+    width: 500px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* or 100% */
+
+    color: #fefcf7;
+  }
+  &__text {
+    /* Start your mornings */
+
+    width: 450px;
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #fefcf7;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  &__btn {
+    @extend %Btn-style;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .intro {
+    padding: 60px 50px;
+    background-position: center;
+    border-radius: 20px;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      width: 280px;
+      /* Great coffee made si */
+
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+
+      color: #fefcf7;
+    }
+    &__text {
+      /* Start your mornings */
+      width: 280px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+      text-align: center;
+    }
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+//   .intro {
+//     background-position: center;
+//     border-radius: 20px;
+//     &__title {
+//       /* Great coffee made si */
+//       width: 330px;
+//       font-style: normal;
+//       font-weight: 900;
+//       font-size: 48px;
+//     }
+//     &__text {
+//       width: 400px;
+//     }
+//   }
+// }

@@ -1,0 +1,75 @@
+.quelity {
+  position: relative;
+  margin-top: 256px;
+  background-color: #2c343e;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  &__title {
+    /* Uncompromising quali */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+
+    color: #fefcf7;
+  }
+  &__text {
+    width: 540px;
+    /* Although we work wit */
+    margin-top: 30px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #fefcf7;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  &__img {
+    position: absolute;
+    top: -90px;
+    right: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .quelity {
+    margin-top: 300px;
+    min-height: 400px;
+    align-items: center;
+    flex-direction: column;
+    &__img {
+      width: 80%;
+      top: -200px;
+      height: 320px;
+      left: 10%;
+      border-radius: 20px;
+    }
+
+    &__right {
+      width: 50%;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__title {
+      width: 80%;
+      font-size: 32px;
+    }
+    &__left{
+        margin-top: 80px;
+    }
+  }
+}

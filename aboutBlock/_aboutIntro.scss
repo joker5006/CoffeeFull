@@ -1,0 +1,47 @@
+.aboutIntro {
+  margin-top: 50px;
+  background-image: url("../img/bitmabAbout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+  height: 500px;
+  border-radius: 20px;
+  &__title {
+    /* About Us */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+
+    color: #fefcf7;
+  }
+  &__text {
+    width: 445px;
+    /* Coffeeroasters began */
+    margin-top: 30px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #fefcf7;
+  }
+}
+
+
+@media only screen and (max-width:768px){
+    .aboutIntro{
+        background-position: center;
+        height: 400px;
+        padding: 50px;
+
+        &__text{
+          width: 100%;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.works {
+  margin-top: 500px;
+
+  &__maintitle {
+    /* How it works */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    color: #83888f;
+  }
+  &__sircle {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    // gap: 300px;
+  }
+
+  &__box {
+    width: 60px;
+    height: 60px;
+    border: 1px solid green;
+    border-radius: 50%;
+  }
+  &__hr {
+    width: 600px;
+  }
+
+  &__cards {
+    margin-top: 100px;
+    // @include Display;
+    display: flex;
+    align-items: center;
+    gap: 380px;
+  }
+
+  &__title {
+    /* 01 */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* identical to box height, or 100% */
+
+    color: #fdd6ba;
+  }
+  &__subtitle {
+    /* Pick your coffee */
+    width: 250px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* or 112% */
+
+    color: #333d4b;
+  }
+
+  &__text {
+    /* Select from our evol */
+    margin-top: 30px;
+    width: 285px;
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #333d4b;
+  }
+
+  &__btn {
+    margin-top: 50px;
+    @extend %Btn-style;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .works {
+    margin-top: 800px;
+    &__sircle {
+      display: none;
+    }
+    &__maintitle {
+      text-align: center;
+    }
+    &__cards {
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__text,
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 50px;
+      margin-left: 80px;
+    }
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+//   .works {
+//     &__cards {
+//       gap: 20px;
+//       align-items: start;
+//     }
+//     &__hr {
+//       width: 200px;
+//     }
+//     &__text {
+//       width: 223px;
+//     }
+//     &__subtitle {
+//       /* Pick your coffee */
+//       width: 200px;
+//       font-style: normal;
+//       font-weight: 900;
+//       font-size: 28px;
+//     }
+//     &__box {
+//       width: 30px;
+//       height: 30px;
+//     }
+//   }
+// }

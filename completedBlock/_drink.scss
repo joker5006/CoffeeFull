@@ -1,0 +1,135 @@
+.drink {
+  margin-top: 159px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__title {
+    /* 01 */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    color: #0e8784;
+  }
+  &__subtitle {
+    /* Preferences */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    color: #7c8085;
+    transition: all 0.3s linear;
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+ 
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    &-title {
+      /* How do you drink you */
+
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height, or 120% */
+
+      color: #83888f;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &__cards {
+    width: 228px;
+    height: 250px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #fdd6ba;
+    }
+    &:active {
+      background-color: #0e8784;
+    }
+    &-title {
+      /* Capsule */
+
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+
+      color: #333d4b;
+    }
+    &-text {
+      /* Compatible with Nesp */
+      margin-top: 30px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      color: #333d4b;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .drink {
+    &__left {
+      display: none;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__cards {
+      width: 100%;
+    }
+
+    &__top{
+      &-title{
+        font-size: 25px;
+      }
+    }
+  }
+}

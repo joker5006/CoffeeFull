@@ -1,0 +1,72 @@
+.country {
+  margin-top: 200px;
+  &__subtitle {
+    /* Our headquarters */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 12%;
+    /* identical to box height, or 133% */
+
+    color: #83888f;
+  }
+  &__cards {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+  }
+  &__title {
+    /* United Kingdom */
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+
+    color: #333d4b;
+  }
+  &__text {
+    /* 68 Asfordby Rd Alcas */
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #333d4b;
+  }
+}
+
+
+@media only screen and (max-width:768px){
+    .country{
+        &__cards{
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        &__subtitle{
+            margin-left: 25%;
+        }
+        &__card{
+            align-items: center;
+        }
+        &__title{
+            font-size: 32px;
+        }
+    }
+}

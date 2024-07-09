@@ -1,0 +1,30 @@
+@mixin Display() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%Btn-style {
+  width: 217px;
+  height: 56px;
+  background: #66d2cf;
+  border-radius: 6px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+  border: none;
+  transition: all 0.3s linear;
+  &:hover {
+    background: #3cb2ae;
+  }
+  &:active{
+    background: #a0efec;
+
+  }
+}
+
+

@@ -1,0 +1,68 @@
+.navbar {
+  @include Display();
+  &__logo {
+    width: 236px;
+  }
+  &__list {
+    @include Display;
+    gap: 33px;
+  }
+  &__link {
+    /* HOME */
+
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+
+    color: #83888f;
+    &:hover {
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+
+      color: #333d4b;
+    }
+  }
+
+  &__burger {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__hr {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    &__list {
+      display: none;
+    }
+    &__burger {
+      display: flex;
+    }
+    &__logo {
+      width: 163px;
+    }
+  }
+}
+
+
+
+
+// @media only screen and (max-width:768px){
+//   .navbar{
+
+//   }
+// }
